@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<!--
+	Linear by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>Linear by TEMPLATED</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-panels.min.js"></script>
+	<link rel="stylesheet" href="css/KhongKhi.css">
+	<script src="js/KhongKhi.js"></script>
+	<script src="js/init.js"></script>
+
+</head>
+
+<body>
+
+	<!-- Header -->
+	<div id="header">
+		<div id="nav-wrapper">
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li class="active"><a href="index.html">Homepage</a></li>
+					<li><a href="NietDoHienTai.html">Dự Báo Thời Tiết</a></li>
+					<li><a href="left-sidebar.html">Dự Báo Thời Tiết Qua Map</a></li>
+					<li><a href="right-sidebar.html">Thêm Địa Chỉ</a></li>
+					<li><a href="no-sidebar.html">Đăng Nhập</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="container">
+			<!-- Logo -->
+			<div id="logo">
+				<h1><a href="#">Accuweather</a></h1>
+				<span class="tag">In My Life</span>
+				<form action="">
+					<input type="text" placeholder="Nhập Tên Địa Chỉ" onkeydown="" name="cityname" id="cityname"/>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Header -->
+
+	<!-- Main -->
+	<div id="main">
+		<div class="container">
+			<div class="row">
+
+				<!-- Sidebar -->
+				<ul class="menu-sidebar">
+					<li id="head">Danh Mục Thời Tiết</li>
+					<li><a href="NietDoHienTai.html">Thời Điểm Hiện Tại</a> <i class="fas fa-arrow-right"></i></li>
+					<li><a href="ChatLuongKhongKhi.html">Chất Lượng Không Khí</a><i class="fas fa-arrow-right"></i></li>
+					<li><a>Nhiệt Độ Theo Giờ</a><i class="fas fa-arrow-right"></i></li>
+					<li><a href="NhietDoTheoNgay.html">Nhiệt Độ Theo Ngày </a><i class="fas fa-arrow-right"></i></li>
+				</ul>
+				<!-- Content -->
+				<div id="content" class="8u skel-cell-important">
+					<section>
+						<p>Chất Lượng Không Khí Hiện Tại</p>
+						<article class="now_air">
+							<div id="air_value">
+								<span id="value">27</span>
+								<span>AQI</span>
+							</div>
+							<div id="air_desc">
+								<div class="air_desc_color"></div>
+								<p id="des">Vừa Phải</p>
+								<p>Chất lượng không khí mở mức chấp nhận được đối với hầu hết đối tượng. Tuy nhiên, ở
+									các nhóm đối tượng nhạy cảm có thể sẽ xuất hiện triệu chứng từ nhẹ đến trung bình
+									nếu tiếp xúc quá lâu.</p>
+							</div>
+						</article>
+						<article class="now_air">
+							<div id="menu_air">
+								<ul>
+									<button class="tablinks" onclick="open_air('table1')" id="default">Chất Ô Nhiễm Hiện Tại</button>
+									<button class="tablinks" onclick="open_air('table2')">Thang Đo Chất Lượng Không Khí</button>
+								</ul>
+								<div class="now_pollution">
+									<table class="table-striped table-hover tabcontent" id="table1">
+										<tr>
+											<td>
+												<div class="para_pollu">
+													<span>PM<sub>2.5</sub></span>
+													<div class="air_desc_color"></div>
+													<p class="pollu_des">Vừa Phải</p>
+												</div>
+											</td>
+											<td>
+												Vật chất dạng hạt mịn là các hạt ô nhiễm hít được có đường kính dưới 2,5
+												micro mét có khả năng đi vào trong phổi và dòng máu, gây ra nhiều vấn đề
+												nghiêm trọng về sức khỏe. Tác động nghiêm trọng nhất là ở phổi và tim.
+												Nếu tiếp xúc có thể dẫn đến tình trạng ho hoặc khó thở, làm trầm trọng
+												thêm bệnh hen suyễn và hình thành bệnh đường hô hấp mãn tính.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="para_pollu">
+													<span>PM<sub>10</sub></span>
+													<div class="air_desc_color"></div>
+													<p class="pollu_des">Vừa Phải</p>
+												</div>
+											</td>
+											<td>
+												Vật chất dạng hạt là các hạt ô nhiễm hít được có đường kính dưới 10
+												micro mét. Các hạt lớn hơn 2,5 micro mét có thể tích tụ trong đường dẫn
+												khí, gây ra nhiều vấn đề về sức khỏe. Nếu tiếp xúc nhiều có thể dẫn đến
+												tình trạng kích ứng mắt và cổ họng, ho hoặc khó thở cũng như làm trầm
+												trọng thêm bệnh hen suyễn. Tiếp xúc quá mức và thường xuyên có thể dẫn
+												đến nhiều tác động nghiêm trọng đến sức khỏe.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="para_pollu">
+													<span>SO<sub>2</sub></span>
+													<div class="air_desc_color"></div>
+													<p class="pollu_des">Vừa Phải</p>
+												</div>
+											</td>
+											<td>
+												Tiếp xúc lưu huỳnh điôxít (SO2) có thể dẫn đến tình trạng kích ứng mắt
+												và cổ họng đồng thời làm trầm trọng thêm bệnh hen suyễn và bệnh viêm
+												cuống phổi mãn tính.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="para_pollu">
+													<span>NO<sub>2</sub></span>
+													<div class="air_desc_color"></div>
+													<p class="pollu_des">Vừa Phải</p>
+												</div>
+											</td>
+											<td>
+												Tiếp xúc lưu huỳnh điôxít (SO2) có thể dẫn đến tình trạng kích ứng mắt
+												và cổ họng đồng thời làm trầm trọng thêm bệnh hen suyễn và bệnh viêm
+												cuống phổi mãn tính.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="para_pollu">
+													<span>O<sub>3</sub></span>
+													<div class="air_desc_color"></div>
+													<p class="pollu_des">Vừa Phải</p>
+												</div>
+											</td>
+											<td>
+												Ôzôn mặt đất có thể làm nặng thêm các bệnh về đường hô hấp bị sẵn và
+												cùng có thể dẫn đến tình trạng kích ứng cổ họng, đau đầu và đau ngực.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="para_pollu">
+													<span>CO</span>
+													<div class="air_desc_color"></div>
+													<p class="pollu_des">Vừa Phải</p>
+												</div>
+											</td>
+											<td>
+												Cacbon monoxit (CO) là khí không màu không mùi và khi hít phải ở mức cao
+												có thể gây ra đau đầu, buồn nôn, chóng mặt và nôn mửa. Tiếp xúc nhiều
+												lần trong thời gian dài có thể dẫn đến bệnh về tim
+											</td>
+										</tr>
+									</table>
+									<table class="table-striped table-hover tabcontent" id="table2">
+										<tr>
+											<td>
+												<div class="air_desc_color"></div>
+												<p class="pollu_des">Vừa Phải</p>
+												Ôzôn mặt đất có thể làm nặng thêm các bệnh về đường hô hấp bị sẵn và
+												cùng có thể dẫn đến tình trạng kích ứng cổ họng, đau đầu và đau ngực.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="air_desc_color"></div>
+												<p class="pollu_des">Vừa Phải</p>
+												Ôzôn mặt đất có thể làm nặng thêm các bệnh về đường hô hấp bị sẵn và
+												cùng có thể dẫn đến tình trạng kích ứng cổ họng, đau đầu và đau ngực.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="air_desc_color"></div>
+												<p class="pollu_des">Vừa Phải</p>
+												Ôzôn mặt đất có thể làm nặng thêm các bệnh về đường hô hấp bị sẵn và
+												cùng có thể dẫn đến tình trạng kích ứng cổ họng, đau đầu và đau ngực.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="air_desc_color"></div>
+												<p class="pollu_des">Vừa Phải</p>
+												Ôzôn mặt đất có thể làm nặng thêm các bệnh về đường hô hấp bị sẵn và
+												cùng có thể dẫn đến tình trạng kích ứng cổ họng, đau đầu và đau ngực.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="air_desc_color"></div>
+												<p class="pollu_des">Vừa Phải</p>
+												Ôzôn mặt đất có thể làm nặng thêm các bệnh về đường hô hấp bị sẵn và
+												cùng có thể dẫn đến tình trạng kích ứng cổ họng, đau đầu và đau ngực.
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="air_desc_color"></div>
+												<p class="pollu_des">Vừa Phải</p>
+												Ôzôn mặt đất có thể làm nặng thêm các bệnh về đường hô hấp bị sẵn và
+												cùng có thể dẫn đến tình trạng kích ứng cổ họng, đau đầu và đau ngực.
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</article>
+						<article>
+							<p>Dự Báo Chất Lượng Không Khí 24h</p>
+							<div class="wrapper">
+								<canvas id="myChart"></canvas>
+							</div>
+						</article>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Main -->
+
+	<!-- Tweet -->
+	<div id="tweet">
+		<div class="container">
+			<section>
+				<blockquote>&ldquo;In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula.
+					Pellentesque viverra vulputate enim. Aliquam erat volutpat.&rdquo;</blockquote>
+			</section>
+		</div>
+	</div>
+	<!-- /Tweet -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="container">
+			<section>
+				<header>
+					<h2>Get in touch</h2>
+					<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span>
+				</header>
+				<ul class="contact">
+					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+					<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+					<li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<!-- /Footer -->
+
+	<!-- Copyright -->
+	<div id="copyright">
+		<div class="container">
+			Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a
+				href="http://unsplash.com/cc0">CC0</a>)
+		</div>
+	</div>
+
+
+</body>
+
+</html>

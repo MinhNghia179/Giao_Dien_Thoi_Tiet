@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+.menu-sidebar{
+    border-top: 2px solid gray;
+    list-style-type: none;
+    padding: 0;
+}
+section{
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    border-left: 1px solid gray;
+    padding-left: 25px;
+}
+.menu-sidebar{
+    border: 1px solid #CCCCCC;
+    list-style-type: none;
+    padding: 5px;
+    position: sticky;
+    top: 20px;
+}
+.menu-sidebar li{
+    font-size: 18px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #999999;
+    border: 1px solid gray;
+    transition: background-color 0.3 ease-in-out;
+}
+.menu-sidebar li .fa-arrow-right{
+    float: right;
+    margin-left: 20px;
+}
+.menu-sidebar li:hover{
+    background-color: gray;
+    color: white;
+}
+#head{
+    background-color: #BBBBBB;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.now_air{
+    width: 100%;
+    clear: both;
+    margin-bottom: 20px;
+    display: block;
+}
+.now_air #air_value{
+    float: left;
+    width: 40%;
+    clear: both;
+    padding-top: 70px;
+    overflow: hidden;
+    text-align: center;
+}
+.now_air #air_value #value{
+    font-size: 50px;
+    color: black;
+}
+.now_air #air_desc{
+    float: left;
+    border-left: 1px solid gray;
+    width: 60%;
+    padding: 12px;
+    font-size: 15px;
+    display: block;
+}
+.air_desc_color{
+    border-bottom: 2px solid yellow;
+    padding-top: 5px;
+}
+#menu_air{
+    width: 100%;
+}
+#menu_air ul{
+    border-bottom: 1px solid gray;
+    list-style-type: none;
+}
+#menu_air ul button{
+    display: inline-block;
+    width: 45%;
+    background-color: white;
+    outline: none;
+    border: none;
+    clear: both;
+    text-align: center;
+    padding: 10px;
+    transition:background-color 0.2s ease-in-out;
+    cursor: pointer;
+}
+#menu_air ul button:hover{
+    background-color:  rgba(0,0,0,.1);
+    color: black;
+}
+table td{
+    padding: 25px;
+    color: black;
+    cursor: pointer;
+}
+.table-striped tr:nth-child(odd)
+{
+    background-color: #CCCCCC;
+}
+.table-striped tr:hover{
+    background-color: #EEEEEE;
+}
+.wrapper canvas{
+    width: 750px;
+    height: 400px;
+}

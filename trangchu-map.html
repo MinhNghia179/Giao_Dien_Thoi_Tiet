@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <meta name="viewport" content="width=device-width;initial-scala=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="css/map.css">
+    <script src="js/Map.js"></script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <div class="larger">
+        <div class="container">
+            <div class="lightning">
+                <img src="image/lightning.png" alt="">
+            </div>
+            <div class="sun"></div>
+            <img class="forest" src="forest.svg" alt="">
+            <div class="date">Unknown</div>
+            <div class="weather">
+                <div class="city">Unknown</div>
+                <div class="icon">
+                    <img src="image/temp.png" alt="">
+                </div>
+                <div class="temp">
+                    <div class="curr-temp"><span>Unknown</span><sup><small>o</small></sup></div>
+                    <div class="discription">Unknown</div>
+                    <hr>
+                    <div class="min-max">
+                        Feels Like : <span class="feels">Unknown<sup><small>o</small></sup></span><br>
+                        Temp Range : <span class="min-weather">Unknown<sup>o</sup></span>-<span class="max-weather">Unknown<sup>o</sup></span>
+                    </div>
+                </div>
+            </div>
+            <div class="fog"></div>
+            <div class="rains">
+                <div class="layer-1">
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                </div>
+                <div class="layer-2">
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                </div>
+            </div>
+            <div class="snows">
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+                <div class="snowflake">❅</div>
+                <div class="snowflake">❆</div>
+            </div>
+            <div class="sakuras">
+                <div class="snowflake">🌸</div>
+                <div class="snowflake">🌸</div>
+                <div class="snowflake">🌸</div>
+                <div class="snowflake">🌸</div>
+                <div class="snowflake">🌸</div>
+                <div class="snowflake">🌸</div>
+                <div class="snowflake">🌸</div>
+                <div class="snowflake">🌸</div>
+                <div class="snowflake">🌸</div>
+                <div class="snowflake">🌸</div>
+                <div class="snowflake">🌸</div>
+                <div class="snowflake">🌸</div>
+            </div>
+        </div>
+        <div><i class="far fa-window-close"></i></div>
+    </div>
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArM4GnMGbtJoZTyMZQjvPH3YBwWM5fGv4 &callback=initMap"
+    async defer></script>
+
+</html>

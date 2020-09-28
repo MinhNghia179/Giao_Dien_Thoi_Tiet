@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+}
+section{
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+}
+.menu-sidebar{
+    border: 1px solid #CCCCCC;
+    list-style-type: none;
+    padding: 5px;
+    position: sticky;
+    top: 20px;
+}
+.menu-sidebar li{
+    font-size: 18px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #999999;
+    border: 1px solid gray;
+    transition: background-color 0.3 ease-in-out;
+}
+.menu-sidebar li .fa-arrow-right{
+    float: right;
+    margin-left: 20px;
+}
+.menu-sidebar li:hover{
+    background-color: gray;
+    color: white;
+}
+#head{
+    background-color: #BBBBBB;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    color: black;
+}
+.descript{
+    font-size: 20px;
+    word-wrap: break-word;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    width: 100%;
+    color: inherit;
+    border-bottom: 1px solid gray;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    padding: 12px;
+}
+header .fa-arrow-right{
+    float: right;
+    position: absolute;
+    top: 15px;
+    font-size: 30px;
+    right: 15px;
+    cursor: pointer;
+    color: gray;
+    border: 1px solid #f1f1f1;
+}
+section{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    padding: 0 25px 5px 25px;
+}
+article{
+    margin-top: 10px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #CCCCCC;
+}
+article .header--table-1{
+    width: 100%;
+    border: none;
+    background-color: inherit;
+    display: block;
+}
+article .header--table-1 #header_detail{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+article .header--table-1 #header_detail .img-weather{
+    width: 30%;
+    float: left;
+    border-right: 1px solid gray;
+}
+article .header--table-1 #header_detail .Temp{
+    float: left;
+    width: 80%;
+    padding: 40px;
+}
+#Temp_value{
+    font-size: 40px;
+}
+.table_para{
+    display: flex;
+    border-top: 1px solid gray;
+    font-size: 17px;
+    padding-top: 10px;
+}
+.table_para .tb_para{
+    float: left;
+    width: 50%;
+    clear: both;
+}
+.table_para .tb_para div{
+    display: flex;
+    border-bottom: 1px solid gray;
+    width: 90%;
+    color: white;
+    background-color: gray;
+    position: relative;
+    padding: 8px;
+    padding-left: 5px;
+}
+.table_para .tb_para div:nth-child(even){
+    background-color: rgba(0,0,0,.1);
+    color:black;
+}
+.Detail_value{
+    position: absolute;
+    color: black;
+    right: 10px;
+    font-weight: bold;
+}
+.Time_in_Day{
+    width: 100%;
+    display: block;
+    margin-top: 4px;
+    font-size: 20px;
+}
+.Time_in_Day div{
+    display: flex;
+    position: relative;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-Color 0.3s ease-in-out;
+}
+.Time_in_Day div:hover{
+    background-color: gray;
+    color: white;
+}
+.Time_in_Day div i{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+.des{
+    color: black;
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-left: 35%;
+}
+.history div{
+    display: block;
+    margin-bottom: 40px;
+    font-size: 20px;
+    border-bottom: 1px solid gray;
+    clear: both;
+}
+.history div p {
+    display: inline;
+}
+.history div .his{
+    float: right;
+    margin-right: 30px;
+}
