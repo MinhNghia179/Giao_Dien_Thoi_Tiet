@@ -6,6 +6,23 @@ section{
     font-weight: bold;
     font-size: 13px;
 }
+#main{
+    padding: 0;
+    margin: 0;
+}
+.container-fluid{
+    padding-left: 10%;
+    font-family: 'Bebas Neue';
+    font-size: 18px;
+}
+button{
+    font-size: 13px;
+    padding: 13px;
+    text-align: center;
+    color: white;
+    background-color: rgba(46, 253, 138, 1);
+    border: none;
+}
 .menu-sidebar{
     border: 1px solid #CCCCCC;
     list-style-type: none;
@@ -47,14 +64,18 @@ a{
     text-decoration: none;
     color: black;
 }
+img{
+    width: 100%;
+}
 header{
     width: 100%;
-    color: inherit;
+    color: white;
     border-bottom: 1px solid gray;
     text-align: center;
     font-size: 20px;
     position: relative;
     padding: 12px;
+    background-color: rgba(46, 138, 138, 1); 
 }
 header .fa-arrow-right{
     float: right;
@@ -69,18 +90,20 @@ header .fa-arrow-right{
 section{
     border-left: 1px solid gray;
     border-right: 1px solid gray;
-    padding: 0 25px 5px 25px;
+    padding: 0 10px 5px 10px;
+    margin-top: 20px;
 }
 article{
+    width: 100%;
     margin-top: 10px;
     padding-bottom: 15px;
-    border-bottom: 2px solid #CCCCCC;
 }
 article .header--table-1{
     width: 100%;
     border: none;
     background-color: inherit;
     display: block;
+    margin-top: 20px;
 }
 article .header--table-1 #header_detail{
     width: 100%;
@@ -88,7 +111,7 @@ article .header--table-1 #header_detail{
     padding: 10px;
 }
 article .header--table-1 #header_detail .img-weather{
-    width: 30%;
+    width: 20%;
     float: left;
     border-right: 1px solid gray;
 }
@@ -101,34 +124,44 @@ article .header--table-1 #header_detail .Temp{
     font-size: 40px;
 }
 .table_para{
-    display: flex;
+    width:100%;
     border-top: 1px solid gray;
-    font-size: 17px;
+    font-size: 20px;
     padding-top: 10px;
-}
-.table_para .tb_para{
-    float: left;
-    width: 50%;
-    clear: both;
 }
 .table_para .tb_para div{
     display: flex;
-    border-bottom: 1px solid gray;
-    width: 90%;
+    border-bottom: 1px solid black;
+    width: 100%;
     color: white;
     background-color: gray;
     position: relative;
-    padding: 8px;
-    padding-left: 5px;
+    padding: 12px;
+    margin-top: 5px;
+    padding-left: 50px;
+}
+.table_para .tb_para div img{
+    width: 5%;
+    margin-right: 20px;
+}
+.table_para .tb_para div i {
+    font-size: 30px;
+    margin-right: 20px
 }
 .table_para .tb_para div:nth-child(even){
-    background-color: rgba(0,0,0,.1);
-    color:black;
+    background-color: rgba(54, 105, 138, 0.6);
+    color: white;
+}
+.wrapper canvas{
+    width: 850px;
+    height: 100%;
+    overflow: scroll;
 }
 .Detail_value{
     position: absolute;
     color: black;
-    right: 10px;
+    right: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
 .Time_in_Day{
@@ -175,4 +208,39 @@ article .header--table-1 #header_detail .Temp{
 .history div .his{
     float: right;
     margin-right: 30px;
+}
+.riseset{
+    float: left;
+    width: 50%;
+    clear: right;
+}
+.Forecast_hour {
+    text-align: center;
+    width: 85px;
+    height: auto;
+    padding: 5px;
+    border-radius: 10px;
+    border-bottom: 1px solid rgba(118, 140, 127, 1);
+    float: left;
+}
+#scroll{
+    overflow: scroll;
+}
+#itme{
+    width: 200px;
+    left: 50%;
+    background-color: white;
+}
+.ele_city_name{
+    color: black;
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+.ele_city_name:hover{
+    background-color: gray;
+    cursor: pointer;
 }

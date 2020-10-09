@@ -1,0 +1,58 @@
+
+#project-menu{
+    display:grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap:20px;
+    justify-content:center;
+  }
+  .pro{
+    height:400px;
+    position:relative;
+    background-color:#003333;
+  }
+  .pro-link{
+    position:absolute;
+    bottom:0;
+    left:0;
+    text-align:center;
+    overflow:hidden;
+    width:100%;
+    z-index:2;
+    height:12%;
+    cursor:pointer;
+  }
+  .project-img{
+    position:absolute;
+    height:80%;
+    overflow:hidden;
+    z-index:1;
+  }
+  img{
+    width:100%;
+    height:100%;
+  }
+  #profile-link{
+    background-color:#363636;
+    text-align:center;
+    color:white;
+    line-height:10px;
+    border:none;
+    outline:none;
+    padding:100px;
+    border-bottom:3px solid #AA0000;
+  }
+  #profile-link h2{
+    font-size: 50px;
+  }
+  #profile-link i{
+    font-size:20px;
+    font-weight:thin;
+  }
+  #profile-link ul{
+    list-style-type:none;
+  }
+  #profile-link ul li{
+    display:inline;
+    margin-left:20px;
+    font-size: 25px;
+  }

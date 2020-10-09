@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<!--
+	Linear by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>Linear by TEMPLATED</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-panels.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+	
+	<link rel="stylesheet" href="css/NhietDoHienTai.css">
+	<script src="js/init.js"></script>
+</head>
+
+<body>
+
+	<!-- Header -->
+	<div id="header">
+		<div id="nav-wrapper">
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li class="active"><a href="index.html">HOMEPAGE</a></li>
+					<li><a href="NhietDoHienTai.html">DỰ BÁO THỜI TIẾT</a></li>
+					<li><a href="BanTin.html">BẢNG TIN</a></li>
+					<li><a href="DangNhap.html">ĐĂNG NHẬP</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="container">
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1><a href="#">Accuweather</a></h1>
+				<div>
+					<input type="text" placeholder="NHẬP ĐỊA CHỈ TÌM KIẾM" onkeyup="search_city()" name="cityname" id="cityname" />
+					<button onclick="find_city()">TÌM KIẾM </button>
+					<ul id="itme"></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header -->
+
+	<!-- Main -->
+	<div id="main">
+		<div class="container-fluid">
+			<div class="row">
+
+				<!-- Sidebar -->
+				<ul class="menu-sidebar">
+					<li id="head">DANH MỤC THỜI TIẾT</li>
+					<li><a href="#content">NHIỆT ĐỘ HIỆN TẠI</a> <i class="fas fa-arrow-right"></i></li>
+					<li><a href="#24h">THỜI TIẾT TRONG 24H TIẾP THEO</a><i class="fas fa-arrow-right"></i></li>
+					<li><a href="#scroll">THỜI TIẾT TRONG 48H TIẾP THEO</a><i class="fas fa-arrow-right"></i></li>
+				</ul>
+				<!-- Content -->
+				<div id="content" class="8u skel-cell-important">
+					<section>
+						<header>
+							<p id="city_now"></p>
+							<p id="date"></p>
+							<p id="time"></p>
+						</header>
+						<article>
+							<div class="header--table-1">
+								<p class="des">Nhiệt Độ Hiện Tại</p>
+								<div id="header_detail">
+									<div class="img-weather">
+										<img src="images/windy.png" alt="" width="100%">
+									</div>
+									<div class="Temp">
+										<p id="Temp_value">33</p>
+										<p class="descript" id="des_now">Mưa dông ở một phần trong khu vực</p>
+									</div>
+								</div>
+							</div>
+							<div class="table_para">
+								<div class="tb_para">
+									<div>
+										<i class="fas fa-universal-access"></i>
+										<p class="Detailed">NHIỆT ĐỘ FEELS_LIKE</p>
+										<p class="Detail_value" id="feels_like"></p>
+									</div>
+									<div>
+										<i class="far fa-arrow-alt-circle-up"></i>
+										<p class="Detailed">CHỈ SỐ UV </p>
+										<p class="Detail_value" id="uv"></p>
+									</div>
+									<div>
+										<i class="far fa-arrow-alt-circle-down"></i>
+										<p class="Detailed">ĐIỂM SƯƠNG</p>
+										<p class="Detail_value" id="suong"></p>
+									</div>
+									<div>
+										<i class="fas fa-weight"></i>
+										<p class="Detailed">PRESSURE(KHÍ ÁP)</p>
+										<p class="Detail_value" id="press"></p>
+									</div>
+									<div>
+										<img id="img-humm" src="images/water.png" alt="" width="100%">
+										<p class="Detailed">HUMMIDITY(DỘ ẨM)</p>
+										<p class="Detail_value" id="humidity"></p>
+									</div>
+									<div>
+										<i class="fab fa-mixcloud"></i>
+										<p class="Detailed">CLOUDS(MẬT ĐỘ MÂY)</p>
+										<p class="Detail_value" id="Clouds"></p>
+									</div>
+									<div>
+										<i class="fas fa-wind"></i>
+										<p class="Detailed">WIND_SPEED(TỐC ĐỘ GIÓ)</p>
+										<p class="Detail_value" id="wind_speed"></p>
+									</div>
+									<div>
+										<i class="fas fa-low-vision"></i>
+										<p class="Detailed">VISIBILITY(TẦM NHÌN)</p>
+										<p class="Detail_value" id="visibi"></p>
+									</div>
+									<div>
+										<i class="fas fa-location-arrow"></i>
+										<p class="Detailed">HƯỚNG GIÓ(ĐỘ)</p>
+										<p class="Detail_value" id="huonggio"></p>
+									</div>
+									<div>
+										<i class="fas fa-cloud-sun"></i>
+										<p class="Detailed">SUN RISE(MẶT TRỜI MỌC)</p>
+										<p class="Detail_value" id="rise"></p>
+									</div>
+									<div>
+										<i class="fas fa-cloud-moon"></i>
+										<p class="Detailed">SUN SET(MẶT TRỜI LẶN)</p>
+										<p class="Detail_value" id="set"></p>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article>
+							<p id="24h" class="des">BẢN ĐỒ DỰ BÁO THỜI TIẾT TRONG 24H TIẾP THEO</p>
+							<div class="wrapper">
+								<canvas id="myChart"></canvas>
+							</div>
+						</article> 
+						<article id="scroll">
+							<p class="des">NHIỆT ĐỘ DỰ BÁO THỜI TIẾT TRONG 48H TIẾP THEO</p>
+						</article>
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /Main -->
+
+	<!-- Tweet -->
+	<div id="tweet">
+		<div class="container">
+			<section>
+				<blockquote>&ldquo;In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula.
+					Pellentesque viverra vulputate enim. Aliquam erat volutpat.&rdquo;</blockquote>
+			</section>
+		</div>
+	</div>
+	<!-- /Tweet -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="container">
+			<section>
+				<ul class="contact">
+					<li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
+					<li class="active"><a href="#" class="fa fa-facebook"><span>Facebook</span></a></li>
+					<li><a href="#" class="fa fa-dribbble"><span>Pinterest</span></a></li>
+					<li><a href="#" class="fa fa-tumblr"><span>Google+</span></a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<!-- /Footer -->
+
+	<!-- Copyright -->
+	<div id="copyright">
+		<div class="container">
+			Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a
+				href="http://unsplash.com/cc0">CC0</a>)
+		</div>
+	</div>
+
+	
+	<script src="js/weather.js"></script>
+</body>
+
+</html>
